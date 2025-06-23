@@ -114,6 +114,6 @@ Each model was evaluated on both training and testing data using these metrics.
 - Next steps: Model deployment, API integration, or further hyperparameter tuning.
 
 ---
-## Author KARHIK M
+## Author www.linkedin.com/in/karthik-murugan-b1a14724a
 
 ## License
