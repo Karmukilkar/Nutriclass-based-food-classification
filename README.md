@@ -95,3 +95,24 @@ Each model was evaluated on both training and testing data using these metrics.
 
 ---
 
+
+---
+
+## 3. How to Run
+
+1. Ensure all dependencies are installed (`scikit-learn`, `xgboost`, `pandas`, `numpy`, `matplotlib`, `seaborn`).
+2. Run `preprocessing.ipynb` to clean and prepare the data.
+3. Run `ML_CLASSIFICATION-1.ipynb` to train and evaluate models.
+4. Trained models will be saved in the `models/` directory.
+
+---
+
+## 4. Results & Next Steps
+
+- All models were evaluated and saved.
+- The best-performing model can be selected based on the evaluation metrics.
+- Next steps: Model deployment, API integration, or further hyperparameter tuning.
+
+---
+
+**End of Report**
