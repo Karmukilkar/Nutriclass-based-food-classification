@@ -95,9 +95,6 @@ Each model was evaluated on both training and testing data using these metrics.
 
 ---
 
-
----
-
 ## 3. How to Run
 
 1. Ensure all dependencies are installed (`scikit-learn`, `xgboost`, `pandas`, `numpy`, `matplotlib`, `seaborn`).
@@ -114,7 +111,7 @@ Each model was evaluated on both training and testing data using these metrics.
 - Next steps: Model deployment, API integration, or further hyperparameter tuning.
 
 ---
-## 7. Conclusion
+## 5. Conclusion
 
 This project demonstrates a complete workflow for classifying food items based on nutritional data. The resulting models and insights can support dietary management systems and nutritional analysis platforms, helping users make informed food choices.
 
