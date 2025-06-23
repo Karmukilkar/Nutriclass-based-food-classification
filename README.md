@@ -114,6 +114,10 @@ Each model was evaluated on both training and testing data using these metrics.
 - Next steps: Model deployment, API integration, or further hyperparameter tuning.
 
 ---
+## 7. Conclusion
+
+This project demonstrates a complete workflow for classifying food items based on nutritional data. The resulting models and insights can support dietary management systems and nutritional analysis platforms, helping users make informed food choices.
+
 ## Author www.linkedin.com/in/karthik-murugan-b1a14724a
 
 ## License MIT
