@@ -116,4 +116,4 @@ Each model was evaluated on both training and testing data using these metrics.
 ---
 ## Author www.linkedin.com/in/karthik-murugan-b1a14724a
 
-## License
+## License MIT
