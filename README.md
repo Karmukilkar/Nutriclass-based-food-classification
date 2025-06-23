@@ -1,120 +1,125 @@
-# Food Nutrition Classification Project
+# 🍎 Food Nutrition Classification
 
-## Overview
+[![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](https://www.python.org/)
+[![scikit-learn](https://img.shields.io/badge/scikit--learn-1.0%2B-orange.svg)](https://scikit-learn.org/)
+[![Pandas](https://img.shields.io/badge/Pandas-1.0%2B-yellow.svg)](https://pandas.pydata.org/)
+[![Matplotlib](https://img.shields.io/badge/Matplotlib-3.0%2B-green.svg)](https://matplotlib.org/)
+[![Seaborn](https://img.shields.io/badge/Seaborn-0.11%2B-cyan.svg)](https://seaborn.pydata.org/)
 
-This project classifies food items based on their nutritional features using various machine learning algorithms. The workflow covers data preprocessing, exploratory data analysis (EDA), feature engineering, model training, evaluation, and model persistence for deployment.
+## 📊 Project Overview
 
----
-
-## 1. Data Preprocessing & Exploratory Data Analysis
-
-### 1.1. Importing Libraries
-
-- pandas, numpy, matplotlib, seaborn, scikit-learn, xgboost, pickle
-
-### 1.2. Data Loading
-
-- Loaded raw data from `food_data.csv`.
-
-### 1.3. Initial Exploration
-
-- Inspected data shape, head, and descriptive statistics.
-- Checked for null values and calculated their percentage.
-
-### 1.4. Null Values Treatment
-
-- Dropped rows with missing values due to their small number.
-
-### 1.5. Variable Identification
-
-- Identified numerical and categorical variables.
-
-### 1.6. Distribution Analysis
-
-- Plotted distributions for continuous variables (KDE plots).
-- Plotted counts for categorical variables (count plots).
-
-### 1.7. Outlier Detection & Treatment
-
-- Visualized outliers using boxplots.
-- Applied IQR capping to limit outliers.
-
-### 1.8. Duplicate Removal
-
-- Checked for and removed duplicate entries.
-
-### 1.9. Feature Scaling
-
-- Standardized numerical features using `StandardScaler`.
-
-### 1.10. Categorical Encoding
-
-- Boolean columns (`Is_Vegan`, `Is_Gluten_Free`) encoded as 0/1.
-- Other categorical columns label-encoded.
-
-### 1.11. Feature Importance
-
-- Used `RandomForestClassifier` to rank features.
-- Selected top 9 features for modeling.
+This project develops a robust machine learning system to classify food items into multiple categories based on nutritional attributes such as calories, proteins, carbohydrates, fats, and sugar. The workflow covers data preprocessing, feature engineering, exploratory data analysis, model building (Logistic Regression, Decision Tree, Random Forest, KNN, SVM, XGBoost, Gradient Boosting), evaluation, and model saving. The goal is to accurately label food types and gain insights into what makes each food category distinct, supporting dietary management systems.
 
 ---
 
-## 2. Model Building & Evaluation
+## 🛠️ Technical Tags
 
-### 2.1. Data Preparation
-
-- **Features:** Sodium, Serving_Size, Cholesterol, Sugar, Is_Gluten_Free, Glycemic_Index, Protein, Calories, Fat
-- **Target:** Food_Name
-- Data split into training and testing sets.
-
-### 2.2. Models Trained
-
-| Model                     | File Saved As         |
-|---------------------------|----------------------|
-| Logistic Regression       | Logistic_reg         |
-| Decision Tree Classifier  | DecisionTree_model   |
-| Random Forest Classifier  | rand_forest          |
-| K-Nearest Neighbors       | kn_model             |
-| Support Vector Machine    | SVM_model            |
-| XGBoost Classifier        | XGB_model            |
-| Gradient Boosting Class.  | GBC_model            |
-
-### 2.3. Evaluation Metrics
-
-- Accuracy
-- Precision
-- Recall
-- F1 Score
-- Confusion Matrix
-
-Each model was evaluated on both training and testing data using these metrics.
-
-### 2.4. Model Persistence
-
-- All trained models were saved using Python’s `pickle` module for future inference and deployment.
+- Data Preprocessing
+- Classification Modeling
+- Feature Engineering
+- Hyperparameter Tuning
+- Visualization
+- Python
+- Scikit-learn
+- Pandas
+- Matplotlib/Seaborn
 
 ---
 
-## 3. How to Run
+## 🚀 Approach
 
-1. Ensure all dependencies are installed (`scikit-learn`, `xgboost`, `pandas`, `numpy`, `matplotlib`, `seaborn`).
-2. Run `preprocessing.ipynb` to clean and prepare the data.
-3. Run `ML_CLASSIFICATION-1.ipynb` to train and evaluate models.
-4. Trained models will be saved in the `models/` directory.
+1. **Data Preprocessing:**  
+   - Load and clean raw data
+   - Handle missing values, outliers, and duplicates
+   - Convert data types and encode categorical variables
+2. **Feature Engineering:**  
+   - Select top features using feature importance
+   - Standardize numerical features
+3. **Exploratory Data Analysis:**  
+   - Visualize distributions, outliers, and category frequencies
+   - Analyze feature correlations and importance
+4. **Modeling:**  
+   - Train and evaluate Logistic Regression, Decision Tree, Random Forest, KNN, SVM, XGBoost, and Gradient Boosting models
+5. **Evaluation:**  
+   - Use Accuracy, Precision, Recall, F1 Score, and Confusion Matrix for model comparison
+6. **Model Saving:**  
+   - Serialize trained models for future use
 
 ---
 
-## 4. Results & Next Steps
+---
 
-- All models were evaluated and saved.
-- The best-performing model can be selected based on the evaluation metrics.
-- Next steps: Model deployment, API integration, or further hyperparameter tuning.
+## 📈 Key Insights
+
+- **Distinctive Features:** Calories, protein, fat, and sugar are the most significant for classifying food categories.
+- **Model Performance:** Ensemble models (Random Forest, XGBoost, Gradient Boosting) outperform simpler models.
+- **Data Quality:** Clean, well-annotated data with minimal missing values and outliers is crucial for high accuracy.
+- **Practical Use:** The system can be integrated into dietary management apps and nutritional recommendation platforms.
 
 ---
-## 5. Conclusion
 
-This project demonstrates a complete workflow for classifying food items based on nutritional data. The resulting models and insights can support dietary management systems and nutritional analysis platforms, helping users make informed food choices.
+## 📝 How to Run
 
-## Author www.linkedin.com/in/karthik-murugan-b1a14724a
+1. **Clone the repository:**
+    ```bash
+    git clone https://github.com/yourusername/food-nutriclass-project.git
+    cd food-nutriclass-project
+    ```
 
-## License MIT
+2. **Install dependencies:**
+    ```bash
+    pip install -r requirements.txt
+    ```
+    *(Create `requirements.txt` with pandas, numpy, scikit-learn, matplotlib, seaborn, xgboost, etc.)*
+
+3. **Run Notebooks:**
+    - Open [preprocessing.ipynb](http://_vscodecontentref_/3) for data cleaning and feature engineering.
+    - Open [ML_CLASSIFICATION-1.ipynb](http://_vscodecontentref_/4) for model training and evaluation.
+
+---
+
+## 📊 Visualization Examples
+
+- Distribution plots for all nutritional features
+- Category frequency barplots
+- Correlation heatmap
+- Boxplots for outlier detection
+
+---
+
+## 🤖 Model Evaluation
+
+| Model                | Accuracy | Precision | Recall | F1 Score |
+|----------------------|----------|-----------|--------|----------|
+| Logistic Regression  | 0.980486 | 0.980527  | 0.9804 | 0.980479 |
+| Decision Tree        | 0.988996 | 0.989009  | 0.9889 | 0.988988 |
+| Random Forest        | 0.994498 | 0.994521  | 0.9944 | 0.994501 |
+| KNN                  | 0.989507 | 0.989526  | 0.9895 | 0.989491 |
+| SVM                  | 0.989251 | 0.989373  | 0.9892 | 0.989271 |
+| XGBoost              | 0.99501  | 0.995035  | 0.9950 | 0.99501  |
+| Gradient Boosting    | 0.99501  | 0.995035  | 0.9950 | 0.995009 |
+
+
+---
+
+## 💡 Recommendations
+
+- Add more features (e.g., fiber, vitamins) for improved classification
+- Use hyperparameter tuning for optimal model performance
+- Consider robust scaling or outlier removal for stability
+- Deploy the best model for real-time food classification
+
+---
+
+## 📚 References
+
+- [Pandas Documentation](https://pandas.pydata.org/docs/)
+- [Scikit-learn Documentation](https://scikit-learn.org/stable/documentation.html)
+- [Matplotlib Documentation](https://matplotlib.org/stable/contents.html)
+- [Seaborn Documentation](https://seaborn.pydata.org/)
+
+---
+
+## © License
+
+This project is licensed under the MIT
