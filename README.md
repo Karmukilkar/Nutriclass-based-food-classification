@@ -11,6 +11,24 @@
 This project develops a robust machine learning system to classify food items into multiple categories based on nutritional attributes such as calories, proteins, carbohydrates, fats, and sugar. The workflow covers data preprocessing, feature engineering, exploratory data analysis, model building (Logistic Regression, Decision Tree, Random Forest, KNN, SVM, XGBoost, Gradient Boosting), evaluation, and model saving. The goal is to accurately label food types and gain insights into what makes each food category distinct, supporting dietary management systems.
 
 ---
+## ✅ What Problem Does It Solve?
+Choosing healthy foods can be overwhelming when nutritional information is scattered or hard to interpret. Many people struggle to compare food items quickly or find alternatives that align with specific dietary goals (e.g., low-carb, high-protein, low-sugar). For dieticians and health-focused apps, classifying foods accurately is critical to automate recommendations, build meal plans, and help people stick to their health goals.
+
+---
+🎯 Why It’s Needed
+By automatically classifying food items into meaningful nutritional categories, NutriClass makes it easier to:
+
+Suggest healthier alternatives based on nutritional content.
+
+Build personalized diet plans at scale.
+
+Highlight what makes one food different from another (e.g., high protein vs. high sugar).
+
+Support diet management systems, fitness apps, or grocery platforms that need clear food labels.
+
+This kind of classification is essential for building data-driven nutrition tools that save time for dieticians and empower consumers to make better decisions.
+
+---
 
 ## 🛠️ Technical Tags
 
